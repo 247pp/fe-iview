@@ -1,0 +1,79 @@
+.ghost-button-group {
+  .example-content {
+    margin: 15px 0;
+  }
+  .md-body {
+    margin-top: 10px;
+  }
+
+  .desc {
+    margin-bottom: 15px;
+  }
+
+  .ivu-row + .ivu-row {
+    margin-top: 20px;
+  }
+
+  .ivu-row-button () {
+    button {
+      color: #515CBE;
+      box-sizing: border-box;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgba(81, 92, 190, 1);
+      box-shadow: none !important;
+      position: relative;
+      &:hover{
+        z-index: 100;
+        background-color: rgba(242, 242, 250, 1)!important;
+      }
+      span {
+        display: flex;
+        align-items: center;
+      }
+    }
+    button:nth-of-type(1) {
+      border-color: rgba(81, 92, 190, 1) !important;
+    }
+  }
+
+  .ivu-row + .ivu-row:nth-child(3n+1) {
+    margin-top: 40px;
+  }
+
+  .ivu-row:nth-child(1) {
+    button + button {
+      margin-right: 20px;
+    }
+    .ivu-row-button()
+  }
+
+  .ivu-row:nth-of-type(2) {
+    .ivu-btn-group:nth-of-type(2) {
+      button + button {
+        margin-right: 25px;
+      }
+    }
+    .ivu-btn-group {
+      button + button {
+        margin-right: 42px;
+      }
+      .ivu-row-button()
+    }
+  }
+
+  .ivu-row:nth-of-type(3) {
+    .ivu-btn-group {
+      button + button {
+        margin-right: 87px;
+      }
+      .ivu-row-button()
+    }
+    .ivu-btn-group:nth-of-type(2) {
+        button + button {
+          margin-right: 59px;
+        }
+        margin-right: 9px;
+      }
+  }
+}

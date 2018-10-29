@@ -1,0 +1,222 @@
+// Prefix 前缀
+@css-prefix             : ivu-;
+@css-prefix-iconfont    : ivu-icon;
+
+/**
+ *按UED的UI文档自定义theme
+ */
+// 主色
+// 组件使用较为稳重、正式的蓝紫色作为主色调，起源于Logo 色，其中 Light Primary 常用于 hover，Dark Primary 常用于 active。
+@primary-color          : #515CBE;// Primary
+@light-primary-color    : #7F88DF;
+@dark-primary-color     : #444AA0;
+// 辅助色
+// 辅助色是具有代表性的颜色，常用于信息提示，比如成功、警告和失败。
+@info-color             : #6666FF;// info
+@light-info-color       : #EAF3FE;
+@success-color          : #3BAB78;// success
+@light-success-color    : #EBF8EE;
+@warning-color          : #FF9933;// warning
+@light-warning-color    : #FEF4E8;
+@error-color            : #F85555;// error
+@light-error-color      : #FCEDE6;
+@link-color             : #515CBE;//链接颜色
+@link-hover-color       : tint(@link-color, 20%);
+@link-active-color      : shade(@link-color, 5%);
+@gray-alpha             : #949494;
+@light-gray-alpha       : #F2F2F2;
+@gray-beta              : #BCBCBC;
+@light-gray-beta        : #F8F8F8;
+// 中性色
+// 中性色常用于文本、背景、边框、阴影等，可以体现出页面的层次结构。
+@title-color            : #333333; // 标题颜色
+@subtitle               : #666666; // 副标题
+@text-color             : #666666; // 正文颜色
+@subsidiary-color       : #999999; // 提示文字色
+// 边框颜色见 @border-color-base
+// 分割线颜色见 @border-color-split
+@cover-color            : fade(@black, 70%); // 遮罩层颜色
+// 背景色深见 @background-color-base
+@light-background-color : #fafafa; // 背景色浅
+
+// 状态色
+// 状态色侧重于描述某个对象的交互状态变化，包括当前状态场景、交互事件、转换动作等。
+@normal-color          : #fff;
+@move-in-color         : #f2f2fa;
+@disabled-color        : #f2f2f2;
+// 阴影颜色见@shadow-color
+
+// 其他常用颜色 Color
+@tooltip-color          : #fff;
+@rate-star-color        : #f5a623;
+@selected-color         : fade(@primary-color, 90%);
+@black                  : #000000;
+@background-color-light : #FCFCFC;
+@color-white            : #FFFFFF;
+
+// Base
+@body-background        : #fff;
+@font-family            : "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+@code-family            : Consolas,Menlo,Courier,monospace;
+@font-size-title        : 16px; // 标题
+@font-size-subtitle     : 14px; // 副标题
+@font-size-base         : 14px; // 副标题
+@font-size-small        : 12px; // 正文，提示
+@line-height-base       : 1.5;
+@line-height-computed   : floor((@font-size-base * @line-height-base));
+@border-radius-base     : 6px;
+@border-radius-small    : 4px;
+@cursor-disabled        : not-allowed;
+
+// Border color
+@border-color-base      : #D7D7D7;  // outside 边框
+@border-color-split     : #E4E4E4;  // inside 分割线
+
+// Background color
+@background-color-base        : #F5F7F9;  // base 背景色深
+@background-color-select-hover: @input-disabled-bg;
+@tooltip-bg                   : rgba(70, 76, 91, .9);
+@head-bg                      : #f9fafc;
+@table-thead-bg               : #f5f7f9;
+@table-td-stripe-bg           : #f5f7f9;
+@table-td-hover-bg            : #ebf7ff;
+@table-td-highlight-bg        : #ebf7ff;
+@menu-dark-active-bg          : #313540;
+@date-picker-cell-hover-bg    : #e1f0fe;
+
+// shadow
+@shadow-color           : rgba(0, 0, 0, .35);
+@shadow-base            : @shadow-down;
+@shadow-card            : 0 1px 1px 0 @shadow-color;
+@shadow-up              : 0 -1px 4px @shadow-color;
+@shadow-down            : 0 1px 4px @shadow-color;
+@shadow-left            : -1px 0 4px @shadow-color;
+@shadow-right           : 1px 0 4px @shadow-color;
+
+// Button
+@btn-font-weight        : normal;
+@btn-padding-base       : 6px 15px;
+@btn-padding-large      : 6px 15px 7px 15px;
+@btn-padding-small      : 2px 7px;
+@btn-font-size          : 12px;
+@btn-font-size-large    : 14px;
+@btn-border-radius      : 4px;
+@btn-border-radius-small: 3px;
+@btn-group-border       : shade(@primary-color, 5%);
+
+@btn-disable-color      : #CCCCCC;//失效
+@btn-disable-bg         : @background-color-base;
+@btn-disable-border     : @border-color-base;
+
+@btn-default-color      : @text-color;
+@btn-default-bg         : @background-color-base;
+@btn-default-border     : @border-color-base;
+
+@btn-primary-color      : #fff;
+@btn-primary-bg         : @primary-color;
+
+@btn-ghost-color        : @text-color;
+@btn-ghost-bg           : transparent;
+@btn-ghost-border       : @border-color-base;
+
+@btn-circle-size        : 32px;
+@btn-circle-size-large  : 36px;
+@btn-circle-size-small  : 24px;
+
+// Layout and Grid
+@grid-columns                : 24;
+@grid-gutter-width           : 0;
+@layout-body-background      : #f5f7f9;
+@layout-header-background    : #495060;
+@layout-header-height        : 64px;
+@layout-header-padding       : 0 50px;
+@layout-footer-padding       : 24px 50px;
+@layout-footer-background    : @layout-body-background;
+@layout-sider-background     : @layout-header-background;
+@layout-trigger-height       : 48px;
+@layout-trigger-color        : #fff;
+@layout-zero-trigger-width   : 36px;
+@layout-zero-trigger-height  : 42px;
+
+// Legend
+@legend-color           : #999;
+
+// Input
+@input-height-base           : 32px;
+@input-height-large          : 36px;
+@input-height-small          : 24px;
+
+@input-padding-horizontal    : 7px;
+@input-padding-vertical-base : 4px;
+@input-padding-vertical-small: 1px;
+@input-padding-vertical-large: 6px;
+
+@input-placeholder-color     : @btn-disable-color;
+@input-color                 : @text-color;
+@input-border-color          : @border-color-base;
+@input-bg                    : #fff;
+
+@input-hover-border-color    : @primary-color;
+@input-focus-border-color    : @primary-color;
+@input-disabled-bg           : #f3f3f3;
+
+// Tag
+@tag-font-size          : 12px;
+
+// Media queries breakpoints
+// Extra small screen / phone
+@screen-xs              : 480px;
+@screen-xs-min          : @screen-xs;
+@screen-xs-max          : (@screen-xs-min - 1);
+
+// Small screen / tablet
+@screen-sm              : 768px;
+@screen-sm-min          : @screen-sm;
+@screen-sm-max          : (@screen-sm-min - 1);
+
+// Medium screen / desktop
+@screen-md              : 992px;
+@screen-md-min          : @screen-md;
+@screen-md-max          : (@screen-md-min - 1);
+
+// Large screen / wide desktop
+@screen-lg              : 1200px;
+@screen-lg-min          : @screen-lg;
+@screen-lg-max          : (@screen-lg-min - 1);
+
+// Z-index
+@zindex-spin            : 8;
+@zindex-affix           : 10;
+@zindex-back-top        : 10;
+@zindex-select          : 900;
+@zindex-modal           : 1000;
+@zindex-message         : 1010;
+@zindex-notification    : 1010;
+@zindex-tooltip         : 1060;
+@zindex-loading-bar     : 2000;
+
+// Animation
+@animation-time         : .3s;
+@transition-time        : .2s;
+@ease-in-out            : ease-in-out;
+
+// Slider
+@slider-color              : tint(@primary-color, 20%);
+@slider-height             : 4px;
+@slider-margin             : 16px 0;
+@slider-button-wrap-size   : 18px;
+@slider-button-wrap-offset : -4px;
+@slider-disabled-color     : #ccc;
+
+// Avatar 头像
+@avatar-size-base: 32px;
+@avatar-size-lg: 40px;
+@avatar-size-sm: 24px;
+@avatar-font-size-base: 18px;
+@avatar-font-size-lg: 24px;
+@avatar-font-size-sm: 14px;
+@avatar-bg: #ccc;
+@avatar-color: #fff;
+@avatar-border-radius: @border-radius-small;
+
+

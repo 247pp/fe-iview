@@ -1,0 +1,59 @@
+
+.combination-vue {
+  .example-content {
+    margin: 15px 0;
+  }
+  .md-body {
+    margin-top: 10px;
+  }
+
+  .desc {
+    margin-bottom: 15px;
+  }
+
+  .ivu-row + .ivu-row {
+    margin-top: 20px;
+  }
+
+  .ivu-row + .ivu-row:nth-child(3n+1) {
+    margin-top: 40px;
+  }
+  .ivu-row .ivu-btn-group {
+    margin-bottom: 20px;
+  }
+  .ivu-row {
+    .ivu-btn-group {
+      button {
+        background-color: rgba(255, 255, 255, 0);
+        box-sizing: border-box !important;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgba(215, 215, 215, 1) !important;
+        box-shadow: none;
+        color: #666666;
+        position: relative;
+      }
+      .ivu-row-active-class-btn {
+        border-width: 1px!important;
+        border-right: 1px !important;
+        border-style: solid!important;
+        border-color: rgba(81, 92, 190, 1) !important;
+        z-index: 100;
+        color: rgb(81, 92, 190)!important;
+      }
+      .ivu-row-active-btn {
+        background-color: rgba(81, 92, 190, 1)!important;
+        color: rgba(255, 255, 255, 1)!important;
+        box-sizing: border-box;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgba(81, 92, 190, 1) !important;
+        z-index: 100;
+      }
+    }
+    button[disabled="disabled"] {
+      color: #c5c8ce;
+      background-color: #f5f5f5 !important;
+    }
+  }
+}

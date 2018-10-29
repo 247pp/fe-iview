@@ -1,0 +1,54 @@
+.individuation{
+.example-content {
+    margin: 15px 0;
+  }
+  .md-body {
+    margin-top: 10px;
+  }
+
+  .desc {
+    margin-bottom: 15px;
+  }
+
+  .ivu-row + .ivu-row {
+    margin-top: 20px;
+  }
+
+  .ivu-row + .ivu-row:nth-child(3n+1) {
+    margin-top: 40px;
+  }
+  .ivu-row:nth-child(3n+2) {
+    button + button {
+      margin-left: 28px;
+    }
+  }
+
+  .ivu-row:nth-child(3n) {
+    button + button {
+      margin-left: 44px;
+    }
+  }
+
+  .ivu-row {
+    button {
+      color: #949494;
+      background-color: rgba(255, 255, 255, 0) !important;
+      box-shadow: none;
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i {
+          margin-right: 5px;
+        }
+        sup {
+          margin-left: 5px;
+        }
+      }
+      &:hover {
+        color: rgb(81, 92, 190);
+        border: 1px solid rgb(81, 92, 190)!important;
+      }
+    }
+  }
+}
